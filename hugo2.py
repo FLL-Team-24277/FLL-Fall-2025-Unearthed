@@ -9,18 +9,25 @@ from base_robot import *
 # "Run(br)" method.
 def Run(br: BaseRobot):
 
-    br.driveForDistance(distance=-400, speedPct=80, then=Stop.NONE, waiting=True)
-    br.driveArcDist(radius=-210, dist=-700, speedPct=80, then=Stop.BRAKE, waiting=True)
-   # br.driveForDistance( distance=100, speedPct=80, then=Stop.BRAKE, waiting=True)  
-   # br.moveRightAttachmentMotorForDegrees(degrees=-360, speedPct=30, waiting=True)
-    #br.driveForDistance(distance=220, speedPct=80, then=Stop.BRAKE, waiting=True)
-    # left attachment motor pos speed = raise; neg speed = lower
-    # br.moveLeftAttachmentMotorForMillis(millis=200, speedPct=40)
-    # br.moveLeftAttachmentMotorForMillis(millis=1300, speedPct=-100)
-    # br.moveLeftAttachmentMotorForMillis(millis=1300, speedPct=100)
-    # br.driveForDistance(
-    # distance=-100, speedPct=80, then=Stop.BRAKE, waiting=True)
-    # br.moveRightAttachmentMotorForDegrees(degrees=100, speedPct=80)
+    br.driveForDistance(distance=-210, speedPct=80, then=Stop.NONE, waiting=True)
+    br.moveRightAttachmentMotorForMillis(millis=4000, speedPct=5, waiting=False)
+    # pos spd = lower arm
+    # br.driveArcDist(radius=-175, dist=-700, speedPct=80, then=Stop.BRAKE, waiting=True)
+    br.curve(radius=-245, angle=-180, speedPct=80, then=Stop.BRAKE, waiting=True)
+    br.driveForMillis(millis=100, speedPct=-80)
+    br.moveRightAttachmentMotorForMillis(millis=2000, speedPct=-40, waiting=False)
+    br.driveForDistance(distance=100, speedPct=80, then=Stop.BRAKE, waiting=True)
+
+
+# br.moveRightAttachmentMotorForDegrees(degrees=-360, speedPct=30, waiting=True)
+# br.driveForDistance(distance=220, speedPct=80, then=Stop.BRAKE, waiting=True)
+# left attachment motor pos speed = raise; neg speed = lower
+# br.moveLeftAttachmentMotorForMillis(millis=200, speedPct=40)
+# br.moveLeftAttachmentMotorForMillis(millis=1300, speedPct=-100)
+# br.moveLeftAttachmentMotorForMillis(millis=1300, speedPct=100)
+# br.driveForDistance(
+# distance=-100, speedPct=80, then=Stop.BRAKE, waiting=True)
+# br.moveRightAttachmentMotorForDegrees(degrees=100, speedPct=80)
 
 
 # Leave everything below here and don't type anything below this line
