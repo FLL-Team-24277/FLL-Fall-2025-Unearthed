@@ -9,14 +9,24 @@ from base_robot import *
 # "Run(br)" method.
 def Run(br: BaseRobot):
 
-    br.driveForDistance(distance=-210, speedPct=80, then=Stop.NONE, waiting=True)
-    br.moveRightAttachmentMotorForMillis(millis=4000, speedPct=5, waiting=False)
+    br.driveForDistance(
+        distance=-250, speedPct=80, then=Stop.NONE, waiting=True
+    )
+    br.moveRightAttachmentMotorForMillis(
+        millis=4000, speedPct=5, waiting=False
+    )
     # pos spd = lower arm
     # br.driveArcDist(radius=-175, dist=-700, speedPct=80, then=Stop.BRAKE, waiting=True)
-    br.curve(radius=-245, angle=-180, speedPct=80, then=Stop.BRAKE, waiting=True)
-    br.driveForMillis(millis=100, speedPct=-80)
-    br.moveRightAttachmentMotorForMillis(millis=2000, speedPct=-40, waiting=False)
-    br.driveForDistance(distance=100, speedPct=80, then=Stop.BRAKE, waiting=True)
+    br.curve(
+        radius=-240, angle=-180, speedPct=80, then=Stop.BRAKE, waiting=True
+    )
+    br.driveForDistance(
+        distance=100, speedPct=80, then=Stop.BRAKE, waiting=True
+    )
+    br.moveRightAttachmentMotorForMillis(millis=1000, speedPct=-50)
+    br.driveForDistance(
+        distance=100, speedPct=80, then=Stop.BRAKE, waiting=True
+    )
 
 
 # br.moveRightAttachmentMotorForDegrees(degrees=-360, speedPct=30, waiting=True)
