@@ -51,7 +51,7 @@ def Run(br: BaseRobot):
     br.driveForDistance(
         distance=-100, speedPct=80, then=Stop.BRAKE, waiting=True
     )
-    br.turnInPlace(angle=-60, speedPct=45)
+    br.turnInPlace(angle=-67, speedPct=45)
     br.driveForDistance(
         distance=230, speedPct=80, then=Stop.BRAKE, waiting=True
     )
