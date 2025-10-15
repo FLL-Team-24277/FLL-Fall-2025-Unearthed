@@ -38,11 +38,11 @@ def Run(br: BaseRobot):
     # Lifty thing
     br.turnInPlace(angle=-37, speedPct=45)
     br.driveForDistance(
-        distance=-20, speedPct=80, then=Stop.BRAKE, waiting=True
+        distance=-10, speedPct=80, then=Stop.BRAKE, waiting=True
     )
     br.moveRightAttachmentMotorForDegrees(degrees=-220, speedPct=80)
     br.driveForDistance(
-        distance=140, speedPct=80, then=Stop.BRAKE, waiting=True
+        distance=160, speedPct=80, then=Stop.BRAKE, waiting=True
     )
     br.moveRightAttachmentMotorForDegrees(degrees=40, speedPct=80)
     br.driveForDistance(
