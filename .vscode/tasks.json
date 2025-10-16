@@ -12,7 +12,7 @@
                 "run",
                 "ble",
                 "--name",
-                "${env:robotName}",
+                "${config:fllRobotName}",
                 "${file}"
             ],
             "problemMatcher": {
@@ -54,7 +54,7 @@
                 "run",
                 "ble",
                 "--name",
-                "${env:robotName}",
+                "${config:fllRobotName}",
                 "master_program.py"
             ],
             "problemMatcher": {
