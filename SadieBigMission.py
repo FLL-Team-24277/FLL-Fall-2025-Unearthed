@@ -11,6 +11,68 @@ def Run(br: BaseRobot):
     # Your mission code goes here, step-by-step
     # It MUST be indented just like the lines below
 
+    ###                   GRABBY/LIFTY/SPINNY THINGY
+    br.driveForDistance(
+        distance=180, speedPct=80, then=Stop.BRAKE, waiting=True
+    )
+    br.turnInPlace(angle=15, speedPct=100)
+    # br.driveArcDist(radius=2000, dist=180, speedPct=80, then=Stop.BRAKE, waiting=True)
+
+    br.moveRightAttachmentMotorForDegrees(degrees=-280, speedPct=80)
+    br.waitForMillis(millis=300)
+    br.moveRightAttachmentMotorForDegrees(degrees=15, speedPct=80)
+    br.turnInPlace(angle=-160, speedPct=100, then=Stop.NONE)
+    br.driveForDistance(
+        distance=400, speedPct=100, then=Stop.BRAKE, waiting=True
+    )
+    br.waitForForwardButton()
+
+    ###                                         GREEN MISSION
+
+    br.moveRightAttachmentMotorForDegrees(
+        degrees=-195, speedPct=50, waiting=False
+    )
+    br.driveForDistance(distance=675, speedPct=100, then=Stop.BRAKE, gyro=True)
+    br.turnInPlace(angle=-46, speedPct=45)
+    br.moveRightAttachmentMotorForDegrees(degrees=7, speedPct=80)
+    br.driveForDistance(
+        distance=140, speedPct=81, then=Stop.NONE, waiting=True
+    )
+    # Hello!!
+    br.driveForDistance(
+        distance=220, speedPct=100, then=Stop.NONE, waiting=False
+    )
+    br.moveRightAttachmentMotorForDegrees(degrees=-10, speedPct=80)
+    br.driveForDistance(
+        distance=30, speedPct=80, then=Stop.BRAKE, waiting=True
+    )
+
+    # From
+    br.moveRightAttachmentMotorForDegrees(
+        degrees=190, speedPct=20, waiting=False
+    )
+    br.driveForDistance(
+        distance=-152, speedPct=80, then=Stop.BRAKE, waiting=True
+    )
+    # br.moveLeftAttachmentMotorForDegrees(degrees=-100, speedPct=40)
+
+    br.driveArcDist(
+        radius=-400, dist=-800, speedPct=80, then=Stop.BRAKE, waiting=True
+    )
+    br.waitForForwardButton()
+
+    ###                     DELIVERY 1
+
+    br.driveForDistance(
+        distance=465, speedPct=80, then=Stop.BRAKE, waiting=True
+    )
+    br.moveRightAttachmentMotorForDegrees(degrees=250, speedPct=80)
+    br.driveForDistance(
+        distance=-485, speedPct=80, then=Stop.BRAKE, waiting=True
+    )
+
+    ###                 ACROSS BOARD
+    br.waitForBackButton()
     # to
     br.driveArcDist(
         radius=-550, dist=-850, speedPct=80, then=Stop.BRAKE, waiting=True
@@ -35,6 +97,7 @@ def Run(br: BaseRobot):
     br.moveRightAttachmentMotorForDegrees(degrees=-200, speedPct=100)
     br.waitForMillis(millis=600)
     br.moveRightAttachmentMotorForDegrees(degrees=210, speedPct=100)
+
     # Lifty thing
     br.turnInPlace(angle=-37, speedPct=45)
     br.driveForDistance(

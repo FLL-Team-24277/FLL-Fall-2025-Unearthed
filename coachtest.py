@@ -11,14 +11,12 @@ def Run(br: BaseRobot):
     # Your mission code goes here, step-by-step
     # It MUST be indented just like the lines below
 
-    # to
-    br.driveForDistance(
-        distance=465, speedPct=80, then=Stop.BRAKE, waiting=True
-    )
-    br.moveRightAttachmentMotorForDegrees(degrees=250, speedPct=80)
-    br.driveForDistance(
-        distance=-485, speedPct=80, then=Stop.BRAKE, waiting=True
-    )
+    # dfd
+    # cur
+    br.curve(radius=-150, angle=-70, speedPct=80, then=Stop.BRAKE, waiting=True) # back to the left ↲
+    br.curve(radius=-150, angle= 70, speedPct=80, then=Stop.BRAKE, waiting=True) # forward to the left ↰
+    br.curve(radius= 150, angle=-70, speedPct=80, then=Stop.BRAKE, waiting=True) # back to the right ↳
+    br.curve(radius= 150, angle= 70, speedPct=80, then=Stop.BRAKE, waiting=True) # forward to the right ↱
 
 
 # Leave everything below here and don't type anything below this line

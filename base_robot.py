@@ -637,10 +637,10 @@ class BaseRobot:
 
         Example:
 
-        >>> curve(radius=350, angle=-60 ↰) # curve forward to the left
-        >>> curve(radius=350, angle=60 ↱) # curve forward to the right
+        >>> curve(radius= 350, angle= 60 ↱) # curve forward to the right
+        >>> curve(radius=-350, angle= 60 ↰) # curve forward to the left
+        >>> curve(radius= 350, angle=-60 ↳) # curve backward to the right
         >>> curve(radius=-350, angle=-60 ↲) # curve backward to the left
-        >>> curve(radius=-350, angle=60 ↳) # curve backward to the right
 
         Args:
 
