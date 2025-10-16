@@ -19,14 +19,15 @@ def Run(br: BaseRobot):
     # pos spd = lower arm
     # br.driveArcDist(radius=-175, dist=-700, speedPct=80, then=Stop.BRAKE, waiting=True)
     br.curve(
-        radius=-240, angle=-180, speedPct=80, then=Stop.BRAKE, waiting=True
+        radius=-230, angle=-180, speedPct=80, then=Stop.BRAKE, waiting=True
     )
+    br.driveForDistance(distance=30, speedPct=80, then=Stop.BRAKE, waiting=True)
     br.moveRightAttachmentMotorForMillis(millis=1000, speedPct=-50)
     br.driveForDistance(
        distance=300, speedPct=80, then=Stop.BRAKE, waiting=True
     )
-    br.moveLeftAttachmentMotorForMillis(millis=1600, speedPct=-80)
-    br.moveLeftAttachmentMotorForMillis(millis=1600, speedPct=80)
+    br.moveLeftAttachmentMotorForMillis(millis=1700, speedPct=-80)
+    br.moveLeftAttachmentMotorForMillis(millis=1700, speedPct=80)
     br.driveForDistance(distance=-300, speedPct=80, then=Stop.BRAKE, waiting=True)
     br.driveArcDist(radius=-150, dist=400, speedPct=100, then=Stop.NONE, waiting=True)
     br.driveForDistance(
