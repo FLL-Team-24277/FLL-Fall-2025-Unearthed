@@ -13,10 +13,18 @@ def Run(br: BaseRobot):
 
     # dfd
     # cur
-    br.curve(radius=-150, angle=-70, speedPct=80, then=Stop.BRAKE, waiting=True) # back to the left ↲
-    br.curve(radius=-150, angle= 70, speedPct=80, then=Stop.BRAKE, waiting=True) # forward to the left ↰
-    br.curve(radius= 150, angle=-70, speedPct=80, then=Stop.BRAKE, waiting=True) # back to the right ↳
-    br.curve(radius= 150, angle= 70, speedPct=80, then=Stop.BRAKE, waiting=True) # forward to the right ↱
+    br.curve(
+        radius=-150, angle=-70, speedPct=80, then=Stop.BRAKE, waiting=True
+    )  # back to the left ↲
+    br.curve(
+        radius=-150, angle=70, speedPct=80, then=Stop.BRAKE, waiting=True
+    )  # forward to the left ↰
+    br.curve(
+        radius=150, angle=-70, speedPct=80, then=Stop.BRAKE, waiting=True
+    )  # back to the right ↳
+    br.curve(
+        radius=150, angle=70, speedPct=80, then=Stop.BRAKE, waiting=True
+    )  # forward to the right ↱
 
 
 # Leave everything below here and don't type anything below this line
