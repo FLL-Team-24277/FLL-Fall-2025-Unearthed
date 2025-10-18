@@ -22,6 +22,7 @@ def Run(br: BaseRobot):
     br.driveForDistance(
         distance=-200, speedPct=80, then=Stop.BRAKE, waiting=True
     )
+    br.waitForForwardButton()
     ###                                         GREEN MISSION
 
     br.moveRightAttachmentMotorForDegrees(
