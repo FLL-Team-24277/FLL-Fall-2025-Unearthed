@@ -27,7 +27,7 @@ def Run(br: BaseRobot):
         radius=150, dist=-230, speedPct=80, then=Stop.NONE, waiting=True
     )
     br.driveForDistance(
-        distance=-150, speedPct=80, then=Stop.BRAKE, waiting=True
+        distance=-140, speedPct=80, then=Stop.BRAKE, waiting=True
     )
     br.driveForDistance(
         distance=80, speedPct=80, then=Stop.BRAKE, waiting=True
