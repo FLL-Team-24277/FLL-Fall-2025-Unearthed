@@ -14,7 +14,7 @@ while True:
         # The first thing this program does is it detects what color is
         # being help up to the robot color sensor.
         # If no color is detected, then it will display a sad face
-        if col == Color.SENSOR_NONE:
+        if col == Color.SENSOR_NONE:  # type: ignore
             br.hub.display.icon(Icon.SAD)
             br.hub.light.on(Color.RED)
         else:  #  If a color is detected, then it will display a happy face
@@ -32,7 +32,7 @@ while True:
             br.driveForMillis(millis=30000, speedPct=100, gyro=False)
 
     # It will now launch the mission coresponding to the color
-    if col == Color.SENSOR_YELLOW:
+    if col == Color.SENSOR_YELLOW:  # type: ignore
         print("Launching Yellow")
         rock.Run(br)
 
@@ -40,7 +40,7 @@ while True:
 
         Delivery2.Run(br)
 
-    if col == Color.SENSOR_LIME:
+    if col == Color.SENSOR_LIME:  # type: ignore
         print("Launching Lime")
         gideon.Run(br)
 
@@ -48,18 +48,18 @@ while True:
     #     print("Launching Magenta")
     #     shaila.Run(br)
 
-    if col == Color.SENSOR_WHITE:
+    if col == Color.SENSOR_WHITE:  # type: ignore
         print("Launching White")
         ImWatchingCarsDuringPractice.Run(br)
 
-    if col == Color.SENSOR_ORANGE:
+    if col == Color.SENSOR_ORANGE:  # type: ignore
         print("Launching Orange")
         noahboulder2.Run(br)
 
-    if col == Color.SENSOR_RED or col == Color.SENSOR_MAGENTA:
+    if col == Color.SENSOR_RED or col == Color.SENSOR_MAGENTA:  # type: ignore
         print("Launching Red/Magenta")
         SadieBigMission.Run(br)
 
-    if col == Color.SENSOR_BLUE:
+    if col == Color.SENSOR_BLUE:  # type: ignore
         print("Launching Blue")
         hugo2.Run(br)
