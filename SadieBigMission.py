@@ -48,12 +48,15 @@ def Run(br: BaseRobot):
         degrees=190, speedPct=20, waiting=False
     )
     br.driveForDistance(
-        distance=-152, speedPct=80, then=Stop.BRAKE, waiting=True
+        distance=-60, speedPct=80, then=Stop.BRAKE, waiting=True
     )
     # br.moveLeftAttachmentMotorForDegrees(degrees=-100, speedPct=40)
 
     br.driveArcDist(
-        radius=-400, dist=-800, speedPct=80, then=Stop.BRAKE, waiting=True
+        radius=-400, dist=-800, speedPct=80, then=Stop.NONE, waiting=True
+    )
+    br.driveForDistance(
+        distance=-150, speedPct=80, then=Stop.BRAKE, waiting=True
     )
     br.waitForForwardButton()
 
@@ -65,69 +68,6 @@ def Run(br: BaseRobot):
     br.moveRightAttachmentMotorForDegrees(degrees=250, speedPct=80)
     br.driveForDistance(
         distance=-485, speedPct=80, then=Stop.BRAKE, waiting=True
-    )
-
-    ###                 ACROSS BOARD
-    br.waitForBackButton()
-    # to
-    br.driveArcDist(
-        radius=-550, dist=-850, speedPct=80, then=Stop.BRAKE, waiting=True
-    )
-    br.moveRightAttachmentMotorForDegrees(degrees=200, speedPct=80)
-    br.driveForDistance(
-        distance=-410, speedPct=80, then=Stop.NONE, waiting=True
-    )
-    # br.turnInPlace(angle=-55, speedPct=45)
-    # br.driveForDistance(distance=40, speedPct=80, then=Stop.BRAKE, waiting=True)
-    # br.moveRightAttachmentMotorForDegrees(degrees=-380, speedPct=100)
-    # br.driveForDistance(distance=-700, speedPct=80, then=Stop.BRAKE, waiting=True)
-    br.driveArcDist(
-        radius=150, dist=-230, speedPct=80, then=Stop.NONE, waiting=True
-    )
-    br.driveForDistance(
-        distance=-150, speedPct=80, then=Stop.BRAKE, waiting=True
-    )
-    br.driveForDistance(
-        distance=80, speedPct=80, then=Stop.BRAKE, waiting=True
-    )
-    br.moveRightAttachmentMotorForDegrees(degrees=-200, speedPct=100)
-    br.waitForMillis(millis=600)
-    br.moveRightAttachmentMotorForDegrees(degrees=210, speedPct=100)
-
-    # Lifty thing
-    br.turnInPlace(angle=-37, speedPct=45)
-    br.driveForDistance(
-        distance=-10, speedPct=80, then=Stop.BRAKE, waiting=True
-    )
-    br.moveRightAttachmentMotorForDegrees(degrees=-220, speedPct=80)
-    br.driveForDistance(
-        distance=160, speedPct=80, then=Stop.BRAKE, waiting=True
-    )
-    br.moveRightAttachmentMotorForDegrees(degrees=40, speedPct=80)
-    br.driveForDistance(
-        distance=80, speedPct=40, then=Stop.BRAKE, waiting=False
-    )
-    br.moveRightAttachmentMotorForDegrees(degrees=100, speedPct=80)
-    br.waitForMillis(millis=1000)
-    # Who lived here
-    br.driveForDistance(
-        distance=-100, speedPct=80, then=Stop.BRAKE, waiting=True
-    )
-    br.turnInPlace(angle=-65, speedPct=45)
-    br.driveForDistance(
-        distance=230, speedPct=80, then=Stop.BRAKE, waiting=True
-    )
-    br.moveRightAttachmentMotorForDegrees(degrees=-110, speedPct=80)
-    br.driveForDistance(
-        distance=-78, speedPct=80, then=Stop.BRAKE, waiting=True
-    )
-    br.moveRightAttachmentMotorForDegrees(degrees=200, speedPct=80)
-    # home
-    br.driveArcDist(
-        radius=280, dist=400, speedPct=80, then=Stop.NONE, waiting=True
-    )
-    br.driveForDistance(
-        distance=800, speedPct=80, then=Stop.BRAKE, waiting=True
     )
 
 
