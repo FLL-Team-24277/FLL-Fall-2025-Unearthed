@@ -63,11 +63,11 @@ while True:
         print("Launching Orange")
         noahboulder2.Run(br)
 
-    if (col == Color.SENSOR_RED or col == Color.SENSOR_MAGENTA) and table_side = "left":  # type: ignore
+    if (col == Color.SENSOR_RED or col == Color.SENSOR_MAGENTA) and table_side == "left":  # type: ignore
         print("Launching Red/Magenta")
         acrossboard.Run(br)
 
-    if (col == Color.SENSOR_RED or col == Color.SENSOR_MAGENTA) and table_side = "right":  # type: ignore
+    if (col == Color.SENSOR_RED or col == Color.SENSOR_MAGENTA) and table_side == "right":  # type: ignore
         print("Launching Red/Magenta")
         SadieBigMission.Run(br)
 
