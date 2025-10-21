@@ -11,6 +11,7 @@ def Run(br: BaseRobot):
     # Your mission code goes here, step-by-step
     # It MUST be indented just like the lines below
 
+    ###                 ACROSS BOARD
     # to
     br.driveArcDist(
         radius=-550, dist=-850, speedPct=80, then=Stop.BRAKE, waiting=True
@@ -35,6 +36,7 @@ def Run(br: BaseRobot):
     br.moveRightAttachmentMotorForDegrees(degrees=-200, speedPct=100)
     br.waitForMillis(millis=600)
     br.moveRightAttachmentMotorForDegrees(degrees=210, speedPct=100)
+
     # Lifty thing
     br.turnInPlace(angle=-37, speedPct=45)
     br.driveForDistance(

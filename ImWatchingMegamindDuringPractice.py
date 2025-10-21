@@ -12,16 +12,16 @@ def Run(br: BaseRobot):
     # It MUST be indented just like the lines below
 
     # to
-    br.driveForDistance(
-        distance=260, speedPct=80, then=Stop.NONE.BRAKE, waiting=True
-    )
-    br.driveArcDist(
-        radius=-90, dist=200, speedPct=80, then=Stop.NONE.BRAKE, waiting=True
-    )
-    br.turnInPlace(angle=36, speedPct=45)
-    br.driveForDistance(distance=170, speedPct=80, then=Stop.BRAKE, waiting=True)
-    br.turnInPlace(angle=-150, speedPct=45)
-    br.driveForDistance(distance=400, speedPct=80, then=Stop.BRAKE, waiting=True)
+    br.driveForDistance(distance=260, speedPct=80, then=Stop.NONE.BRAKE, waiting=True)
+    br.driveArcDist(radius=-90, dist=200, speedPct=80, then=Stop.NONE.BRAKE, waiting=True)
+    br.driveForDistance(distance=125, speedPct=80, then=Stop.BRAKE, waiting=True)
+    br.driveArcDist(radius=97, dist=100, speedPct=80, then=Stop.BRAKE, waiting=True)  
+    br.driveForDistance(distance=45, speedPct=80, then=Stop.BRAKE, waiting=True)
+    br.turnInPlace(angle=13, speedPct=45)
+    br.turnInPlace(angle=-100, speedPct=45)
+    br.turnInPlace(angle=100, speedPct=45)
+    br.driveForDistance(distance=-600, speedPct=100, then=Stop.BRAKE, waiting=True)
+
 
 # br.driveArcDist(radius=30, dist=175, speedPct=80, then=Stop.BRAKE, waiting=True)
 
