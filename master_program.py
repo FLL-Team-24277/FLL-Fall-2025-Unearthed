@@ -7,7 +7,6 @@ br: BaseRobot = BaseRobot()
 
 pressed = []
 col: Color = br.colorSensor.color()
-table_side = "left"
 
 
 while True:
@@ -63,14 +62,13 @@ while True:
         print("Launching Orange")
         noahboulder2.Run(br)
 
-    if (col == Color.SENSOR_RED or col == Color.SENSOR_MAGENTA) and table_side = "left":  # type: ignore
-        print("Launching Red/Magenta")
-        acrossboard.Run(br)
-
-    if (col == Color.SENSOR_RED or col == Color.SENSOR_MAGENTA) and table_side = "right":  # type: ignore
-        print("Launching Red/Magenta")
+    if (col == Color.SENSOR_RED or col == Color.SENSOR_MAGENTA) and table_side == "left":  # type: ignore
+        print("Launching Red/Magenta with left button")
         SadieBigMission.Run(br)
 
+    if (col == Color.SENSOR_RED or col == Color.SENSOR_MAGENTA) and table_side == "right":  # type: ignore
+        print("Launching Red/Magenta with right button")
+        acrossboard.Run(br)
 
     if col == Color.SENSOR_BLUE:  # type: ignore
         print("Launching Blue")
