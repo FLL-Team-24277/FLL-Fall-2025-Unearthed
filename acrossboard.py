@@ -12,7 +12,6 @@ def Run(br: BaseRobot):
     # It MUST be indented just like the lines below
 
     ###                 ACROSS BOARD
-    br.waitForBackButton()
     # to
     br.driveArcDist(
         radius=-550, dist=-850, speedPct=80, then=Stop.BRAKE, waiting=True
