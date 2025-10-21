@@ -7,7 +7,7 @@ br: BaseRobot = BaseRobot()
 
 pressed = []
 col: Color = br.colorSensor.color()
-table_side = "left"
+table_side: str = "left"
 
 
 while True:
