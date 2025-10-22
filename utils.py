@@ -13,7 +13,7 @@ if TIRE_DIAMETER == 88:
 # force to maintain that acceleration is the same
 # For 56mm, the maximum that can be set in the settings() command is 9775.
 # For 88mm, the maximum that can be set in the settings() command is 15360.
-DB_MAX_ACCEL_MMSEC2: int = 800
+DB_MAX_ACCEL_MMSEC2: int = 9775
 
 # For turn rates, the best speed and acceleration was determined by testing
 # It did not matter if it was on 56mm or 88mm tires, the values were the

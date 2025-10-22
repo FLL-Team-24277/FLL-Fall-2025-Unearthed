@@ -20,7 +20,7 @@ from utils import *
 DEFAULT_MED_MOT_SPEED_PCT = 90  # normal attachment moter speed, % value
 DEFAULT_MED_MOT_ACCEL_PCT = 80
 DEFAULT_BIG_MOT_SPEED_PCT = 80  # normal wheels moter speed, % value
-DEFAULT_BIG_MOT_ACCEL_PCT = 80
+DEFAULT_BIG_MOT_ACCEL_PCT = 7
 DEFAULT_TURN_SPEED_PCT = 45  #
 DEFAULT_TURN_ACCEL_PCT = 45  #
 DEFAULT_STALL_PCT = 50
@@ -470,7 +470,9 @@ class BaseRobot:
             wait(150)
             self.robot.brake()
 
-        self.robot.settings(acceleration, speed)
+        self.robot.settings(
+            straight_acceleration=acceleration, straight_speed=speed
+        )
         self.robot.straight(distance, then, waiting)
 
     def driveForMillis(
