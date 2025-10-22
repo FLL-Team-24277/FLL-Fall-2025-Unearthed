@@ -16,11 +16,11 @@ def Run(br: BaseRobot):
     br.driveArcDist(radius=-90, dist=200, speedPct=80, then=Stop.NONE.BRAKE, waiting=True)
     br.driveForDistance(distance=125, speedPct=80, then=Stop.BRAKE, waiting=True)
     br.driveArcDist(radius=97, dist=100, speedPct=80, then=Stop.BRAKE, waiting=True)  
-    br.driveForDistance(distance=45, speedPct=80, then=Stop.BRAKE, waiting=True)
+    br.driveForDistance(distance=49, speedPct=80, then=Stop.BRAKE, waiting=True)
     br.turnInPlace(angle=13, speedPct=45)
-    br.turnInPlace(angle=-100, speedPct=45)
-    br.turnInPlace(angle=100, speedPct=45)
-    br.driveForDistance(distance=-600, speedPct=100, then=Stop.BRAKE, waiting=True)
+    br.turnInPlace(angle=-50, speedPct=45, then=Stop.NONE)
+    br.turnInPlace(angle=50, speedPct=45, then=Stop.NONE)
+    br.driveForDistance(distance=-650, speedPct=100, then=Stop.BRAKE, waiting=True)
 
 
 # br.driveArcDist(radius=30, dist=175, speedPct=80, then=Stop.BRAKE, waiting=True)
