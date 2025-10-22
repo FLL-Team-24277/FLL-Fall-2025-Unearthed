@@ -10,25 +10,44 @@ from base_robot import *
 def Run(br: BaseRobot):
     # Your mission code goes here, step-by-step
     # It MUST be indented just like the lines below
+    br.moveRightAttachmentMotorForMillis(millis=500, speedPct=-80)
 
-    dist=45
+    dist = 45
 
     br.driveForDistance(
         distance=359, speedPct=70, then=Stop.BRAKE, waiting=True
     )
-    br.moveLeftAttachmentMotorForDegrees(degrees=-460, speedPct=25) # lower the arm
-    br.driveForDistance(distance=45, speedPct=25, then=Stop.BRAKE, waiting=True)
+    br.moveLeftAttachmentMotorForDegrees(
+        degrees=-460, speedPct=25
+    )  # lower the arm
+    br.driveForDistance(
+        distance=45, speedPct=25, then=Stop.BRAKE, waiting=True
+    )
     for pushes in range(7):
         # br.driveForDistance(
         #     distance=dist, speedPct=100, then=Stop.BRAKE, waiting=True, accelerationPct=100
         # )
-        br.driveArcDist(radius=800, dist=dist + 5, speedPct=80, then=Stop.BRAKE, waiting=True)
-        br.driveForDistance(
-            distance=-dist, speedPct=100, then=Stop.BRAKE, waiting=True, accelerationPct=100
+        br.driveArcDist(
+            radius=800,
+            dist=dist + 5,
+            speedPct=80,
+            then=Stop.BRAKE,
+            waiting=True,
         )
-    
-    br.driveForDistance(distance=-45, speedPct=25, then=Stop.BRAKE, waiting=True)
-    br.moveLeftAttachmentMotorForDegrees(degrees=460, speedPct=80) # raise the arm
+        br.driveForDistance(
+            distance=-dist,
+            speedPct=100,
+            then=Stop.BRAKE,
+            waiting=True,
+            accelerationPct=100,
+        )
+
+    br.driveForDistance(
+        distance=-45, speedPct=25, then=Stop.BRAKE, waiting=True
+    )
+    br.moveLeftAttachmentMotorForDegrees(
+        degrees=460, speedPct=80
+    )  # raise the arm
     br.waitForMillis(millis=2000)
     br.driveArcDist(radius=1000, dist=200, speedPct=40)
     br.driveForDistance(
