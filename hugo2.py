@@ -14,12 +14,12 @@ def Run(br: BaseRobot):
         distance=-215, speedPct=80, then=Stop.NONE, waiting=True
     )
     br.moveRightAttachmentMotorForMillis(
-        millis=4000, speedPct=5, waiting=False
+        millis=4000, speedPct=10, waiting=False
     )
     # pos spd = lower arm
     # br.driveArcDist(radius=-175, dist=-700, speedPct=80, then=Stop.BRAKE, waiting=True)
     br.curve(
-        radius=-230, angle=-180, speedPct=80, then=Stop.BRAKE, waiting=True
+        radius=-230, angle=-180, speedPct=50, then=Stop.BRAKE, waiting=True
     )
     br.driveForDistance(distance=-5, speedPct=10, then=Stop.BRAKE, waiting=True)
     br.driveForDistance(distance=35, speedPct=80, then=Stop.BRAKE, waiting=True)
