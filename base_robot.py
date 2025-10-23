@@ -112,10 +112,12 @@ class BaseRobot:
         )
         # default speeds were determined by testing
         self.robot.settings(
-            RescaleStraightSpeed(DEFAULT_BIG_MOT_SPEED_PCT),
-            RescaleStraightAccel(DEFAULT_BIG_MOT_ACCEL_PCT),
-            RescaleTurnSpeed(DEFAULT_TURN_SPEED_PCT),
-            RescaleTurnAccel(DEFAULT_TURN_ACCEL_PCT),
+            straight_speed=RescaleStraightSpeed(DEFAULT_BIG_MOT_SPEED_PCT),
+            straight_acceleration=RescaleStraightAccel(
+                DEFAULT_BIG_MOT_ACCEL_PCT
+            ),
+            turn_rate=RescaleTurnSpeed(DEFAULT_TURN_SPEED_PCT),
+            turn_acceleration=RescaleTurnAccel(DEFAULT_TURN_ACCEL_PCT),
         )
 
         self.leftAttachmentMotor: Motor = Motor(Port.B)
@@ -620,7 +622,9 @@ class BaseRobot:
         speed = RescaleTurnSpeed(speedPct)
         acceleration = RescaleTurnAccel(accelerationPct)
         self.robot.use_gyro(gyro)
-        self.robot.settings(acceleration, speed)
+        self.robot.settings(
+            straight_acceleration=acceleration, straight_speed=speed
+        )
         self.robot.turn(angle, then, waiting)
 
     def curve(
@@ -677,7 +681,9 @@ class BaseRobot:
         speed = RescaleStraightSpeed(speedPct)
         acceleration = RescaleTurnAccel(accelerationPct)
         self.robot.use_gyro(gyro)
-        self.robot.settings(acceleration, speed)
+        self.robot.settings(
+            straight_acceleration=acceleration, straight_speed=speed
+        )
         self.robot.arc(radius=radius, angle=angle, then=then, wait=waiting)
 
     def driveArcDist(
