@@ -23,12 +23,12 @@ def Run(br: BaseRobot):
     br.driveForDistance(
         distance=45, speedPct=25, then=Stop.BRAKE, waiting=True
     )
-    for pushes in range(5):
+    for pushes in range(3):
         # br.driveForDistance(
         #     distance=dist, speedPct=100, then=Stop.BRAKE, waiting=True, accelerationPct=100
         # )
         br.driveForDistance(
-            distance=dist,
+            distance=dist + 10,
             speedPct=100,
             then=Stop.BRAKE,
             waiting=True,
@@ -36,10 +36,10 @@ def Run(br: BaseRobot):
         )
         br.driveForDistance(
             distance=-dist,
-            speedPct=100,
+            speedPct=75,
             then=Stop.BRAKE,
             waiting=True,
-            accelerationPct=7,
+            accelerationPct=5,
         )
 
     br.driveForDistance(
@@ -49,7 +49,7 @@ def Run(br: BaseRobot):
         degrees=460, speedPct=80
     )  # raise the arm
     br.waitForMillis(millis=2000)
-    br.driveArcDist(radius=1000, dist=200, speedPct=40)
+    br.driveForDistance(distance=200, speedPct=80, then=Stop.BRAKE, waiting=True)
     br.moveRightAttachmentMotorForMillis(millis=500, speedPct=80, waiting=False)
 
     br.driveForDistance(
