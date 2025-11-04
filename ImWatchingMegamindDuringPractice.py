@@ -8,19 +8,33 @@ from base_robot import *
 # When we run this program from the master program, we will call this
 # "Run(br)" method.
 def Run(br: BaseRobot):
-    # Your mission code goes here, step-by-step
-    # It MUST be indented just like the lines below
+
+    br.driveArcDist(
+        radius=-130, dist=215, speedPct=80, then=Stop.BRAKE, waiting=True
+    )
+    br.driveForDistance(
+        distance=260, speedPct=80, then=Stop.BRAKE, waiting=True
+    )
+    br.driveArcDist(
+        radius=-95, dist=200, speedPct=80, then=Stop.BRAKE, waiting=True
+    )
+    br.turnInPlace(angle=90, speedPct=45)
+    br.driveForDistance(
+        distance=100, speedPct=80, then=Stop.BRAKE, waiting=True
+    )
 
     # to
-    br.driveForDistance(distance=260, speedPct=80, then=Stop.NONE.BRAKE, waiting=True)
-    br.driveArcDist(radius=-90, dist=200, speedPct=80, then=Stop.NONE.BRAKE, waiting=True)
-    br.driveForDistance(distance=125, speedPct=80, then=Stop.BRAKE, waiting=True)
-    br.driveArcDist(radius=97, dist=100, speedPct=80, then=Stop.BRAKE, waiting=True)  
-    br.driveForDistance(distance=49, speedPct=80, then=Stop.BRAKE, waiting=True)
-    br.turnInPlace(angle=13, speedPct=45)
-    br.turnInPlace(angle=-50, speedPct=45, then=Stop.NONE)
-    br.turnInPlace(angle=80, speedPct=45, then=Stop.NONE)
-    br.driveForDistance(distance=-650, speedPct=100, then=Stop.BRAKE, waiting=True)
+    # br.driveForDistance(distance=260, speedPct=80, then=Stop.NONE.BRAKE, waiting=True)
+    # br.driveArcDist(radius=-90, dist=200, speedPct=80, then=Stop.NONE.BRAKE, waiting=True)
+    # br.driveForDistance(distance=125, speedPct=80, then=Stop.BRAKE, waiting=True)
+
+
+# br.driveArcDist(radius=97, dist=100, speedPct=80, then=Stop.BRAKE, waiting=True)
+# br.driveForDistance(distance=49, speedPct=80, then=Stop.BRAKE, waiting=True)
+# br.turnInPlace(angle=10, speedPct=45)
+# br.turnInPlace(angle=-50, speedPct=45, then=Stop.NONE)
+# br.turnInPlace(angle=65, speedPct=45, then=Stop.NONE)
+# br.driveForDistance(distance=-550, speedPct=100, then=Stop.BRAKE, waiting=True)
 
 
 # br.driveArcDist(radius=30, dist=175, speedPct=80, then=Stop.BRAKE, waiting=True)
