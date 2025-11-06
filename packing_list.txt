@@ -2,6 +2,8 @@ Judging room
 ------------
 
 Easel & Easel rest
+Slides
+Thing slides go on
 Robot arm prototype
 Dirty artifact
 Clean artifact
@@ -15,7 +17,8 @@ Robots (Timothy & OAKS)
 Indiana Jones Costume
 Team information sheet folder
 Robots (Timothy and OAKS)
-
+Cover for prototype
+Computer to add power to arm
 
 Other
 ------------
@@ -29,3 +32,4 @@ Pens
 Tape
 Snacks
 Extra wires
+Extra batteries
