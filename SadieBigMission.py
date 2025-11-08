@@ -26,11 +26,11 @@ def Run(br: BaseRobot):
     ###                                         GREEN MISSION
 
     br.moveRightAttachmentMotorForDegrees(
-        degrees=-195, speedPct=50, waiting=False
+        degrees=-195, speedPct=30, waiting=False
     )
-    br.driveForDistance(distance=675, speedPct=100, then=Stop.BRAKE, gyro=True)
-    br.turnInPlace(angle=-46, speedPct=45)
-    br.moveRightAttachmentMotorForDegrees(degrees=7, speedPct=80)
+    br.driveForDistance(distance=665, speedPct=100, then=Stop.BRAKE, gyro=True)
+    br.turnInPlace(angle=-44, speedPct=45)
+    br.moveRightAttachmentMotorForDegrees(degrees=10, speedPct=80)
     br.driveForDistance(
         distance=140, speedPct=81, then=Stop.NONE, waiting=True
     )
@@ -63,11 +63,11 @@ def Run(br: BaseRobot):
     ###                     DELIVERY 1
 
     br.driveForDistance(
-        distance=465, speedPct=80, then=Stop.BRAKE, waiting=True
+        distance=485, speedPct=80, then=Stop.BRAKE, waiting=True
     )
     br.moveRightAttachmentMotorForDegrees(degrees=250, speedPct=80)
     br.driveForDistance(
-        distance=-485, speedPct=80, then=Stop.BRAKE, waiting=True
+        distance=-495, speedPct=80, then=Stop.BRAKE, waiting=True
     )
 
 

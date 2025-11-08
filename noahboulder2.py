@@ -17,8 +17,8 @@ def Run(br: BaseRobot):
     # br.moveRightAttachmentMotorForDegrees(degrees=150, speedPct=80, waiting=False)
     br.driveForDistance(distance=600, speedPct=80, then=Stop.BRAKE, waiting=True)
     br.turnInPlace(angle=30, speedPct=40)
-    br.moveRightAttachmentMotorForMillis(millis=1250, speedPct=20)
-    br.driveForDistance(distance=155, speedPct=80, then=Stop.BRAKE, waiting=True)
+    br.moveRightAttachmentMotorForMillis(millis=1000, speedPct=20)
+    br.driveForDistance(distance=90, speedPct=80, then=Stop.BRAKE, waiting=True)
     br.moveRightAttachmentMotorForMillis(millis=500, speedPct=-80)
     # br.driveForDistance(distance=50, speedPct=80, then=Stop.BRAKE, waiting=True)
     # br.moveLeftAttachmentMotorForMillis(millis=800, speedPct=-40)
@@ -33,7 +33,7 @@ def Run(br: BaseRobot):
     br.driveForDistance(distance=-200, speedPct=80, then=Stop.BRAKE, waiting=True)
     br.turnInPlace(angle=-40, speedPct=45)
     br.driveArcDist(radius=600, dist=-200, speedPct=80, then=Stop.NONE, waiting=True)
-    br.driveForDistance(distance=-700, speedPct=80, then=Stop.BRAKE, waiting=True)
+    br.driveForDistance(distance=-300, speedPct=80, then=Stop.BRAKE, waiting=True)
 # Leave everything below here and don't type anything below this line
 # If running this program directly (not from the master program), this is
 # how we know it is running directly. In which case, this method will
