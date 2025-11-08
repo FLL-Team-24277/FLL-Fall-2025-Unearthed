@@ -50,7 +50,7 @@ def Run(br: BaseRobot):
     br.driveForDistance(
         distance=280, speedPct=40, then=Stop.BRAKE, waiting=True
     )
-    br.waitForMillis(millis=1000)
+    br.waitForMillis(millis=500)
     br.moveRightAttachmentMotorForDegrees(degrees=100, speedPct=80)
     br.waitForMillis(millis=1000)
     # Who lived here
