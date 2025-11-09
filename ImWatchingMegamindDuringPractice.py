@@ -9,18 +9,16 @@ from base_robot import *
 # "Run(br)" method.
 def Run(br: BaseRobot):
 
-    br.driveArcDist(
-        radius=-130, dist=215, speedPct=80, then=Stop.BRAKE, waiting=True
-    )
+    # br.driveArcDist(radius=, dist=, speedPct=80, then=Stop.BRAKE, waiting=True)
     br.driveForDistance(
-        distance=260, speedPct=80, then=Stop.BRAKE, waiting=True
+        distance=200, speedPct=80, then=Stop.BRAKE, waiting=True
     )
-    br.driveArcDist(
-        radius=-95, dist=200, speedPct=80, then=Stop.BRAKE, waiting=True
-    )
-    br.turnInPlace(angle=90, speedPct=45)
+    # br.driveArcDist(
+    # radius=-95, dist=200, speedPct=80, then=Stop.BRAKE, waiting=True
+    # )
+    br.turnInPlace(angle=-45, speedPct=45)
     br.driveForDistance(
-        distance=100, speedPct=80, then=Stop.BRAKE, waiting=True
+        distance=250, speedPct=80, then=Stop.BRAKE, waiting=True
     )
 
     # to
