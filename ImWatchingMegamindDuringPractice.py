@@ -9,12 +9,12 @@ from base_robot import *
 # "Run(br)" method.
 def Run(br: BaseRobot):
     br.moveRightAttachmentMotorForMillis(
-        millis=1000, speedPct=50, waiting=False
+        millis=500, speedPct=50, waiting=False
     )
     br.driveArcDist(
         radius=-336, dist=250, speedPct=80, then=Stop.BRAKE, waiting=True
     )
-    br.moveRightAttachmentMotorForDegrees(degrees=-75, speedPct=40)
+    br.moveRightAttachmentMotorForDegrees(degrees=-100, speedPct=40)
     br.driveForDistance(
         distance=150, speedPct=80, then=Stop.BRAKE, waiting=True
     )
@@ -27,7 +27,7 @@ def Run(br: BaseRobot):
     )
     br.moveRightAttachmentMotorForDegrees(degrees=30, speedPct=80)
     br.driveForDistance(
-        distance=-120, speedPct=80, then=Stop.BRAKE, waiting=True
+        distance=-220, speedPct=80, then=Stop.BRAKE, waiting=True
     )
 
     # to
