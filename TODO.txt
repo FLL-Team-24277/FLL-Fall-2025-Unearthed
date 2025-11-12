@@ -8,4 +8,6 @@ TODO: Need a dirty artifact
 TODO: Note cards with extra comments
 TODO: Rewire and reprogram Robot Arm 
 TODO: Get Jackets
-TODO: Reprint slides that have been updated
+TODO: Reprint slides (for easel and binder) that have been updated
+TODO: Fix remaining missions
+TODO: Insert code samples in binder
