@@ -6,3 +6,6 @@ TODO: Review Rubrics--have we covered everything?
 TODO: Review questions from sample judging questions
 TODO: Need a dirty artifact
 TODO: Note cards with extra comments
+TODO: Rewire and reprogram Robot Arm 
+TODO: Get Jackets
+TODO: Reprint slides that have been updated
