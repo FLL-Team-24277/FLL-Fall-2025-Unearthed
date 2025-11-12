@@ -8,17 +8,26 @@ from base_robot import *
 # When we run this program from the master program, we will call this
 # "Run(br)" method.
 def Run(br: BaseRobot):
-
-    # br.driveArcDist(radius=, dist=, speedPct=80, then=Stop.BRAKE, waiting=True)
-    br.driveForDistance(
-        distance=200, speedPct=80, then=Stop.BRAKE, waiting=True
+    br.moveRightAttachmentMotorForMillis(
+        millis=1000, speedPct=50, waiting=False
     )
-    # br.driveArcDist(
-    # radius=-95, dist=200, speedPct=80, then=Stop.BRAKE, waiting=True
-    # )
-    br.turnInPlace(angle=-45, speedPct=45)
+    br.driveArcDist(
+        radius=-336, dist=250, speedPct=80, then=Stop.BRAKE, waiting=True
+    )
+    br.moveRightAttachmentMotorForDegrees(degrees=-75, speedPct=40)
     br.driveForDistance(
-        distance=250, speedPct=80, then=Stop.BRAKE, waiting=True
+        distance=150, speedPct=80, then=Stop.BRAKE, waiting=True
+    )
+    br.moveRightAttachmentMotorForDegrees(degrees=-7, speedPct=80)
+    br.driveForDistance(
+        distance=-85, speedPct=80, then=Stop.BRAKE, waiting=True
+    )
+    br.driveForDistance(
+        distance=20, speedPct=80, then=Stop.BRAKE, waiting=True
+    )
+    br.moveRightAttachmentMotorForDegrees(degrees=30, speedPct=80)
+    br.driveForDistance(
+        distance=-120, speedPct=80, then=Stop.BRAKE, waiting=True
     )
 
     # to
