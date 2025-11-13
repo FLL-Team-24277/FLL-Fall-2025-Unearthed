@@ -12,17 +12,17 @@ def Run(br: BaseRobot):
     # It MUST be indented just like the lines below
 
     ###                   GRABBY/LIFTY/SPINNY THINGY
-    # br.driveForDistance(distance=20, speedPct=80, then=Stop.NONE, waiting=True)
-    # br.moveRightAttachmentMotorForDegrees(degrees=-300, speedPct=80)
-    # br.driveForDistance(
-    #     distance=40, speedPct=80, then=Stop.BRAKE, waiting=True
-    # )
-    # br.waitForMillis(millis=1000)
-    # br.moveRightAttachmentMotorForDegrees(degrees=300, speedPct=50)
-    # br.driveForDistance(
-    #     distance=-200, speedPct=80, then=Stop.BRAKE, waiting=True
-    # )
-    # br.waitForForwardButton()
+    br.driveForDistance(distance=20, speedPct=80, then=Stop.NONE, waiting=True)
+    br.moveRightAttachmentMotorForDegrees(degrees=-300, speedPct=80)
+    br.driveForDistance(
+        distance=40, speedPct=80, then=Stop.BRAKE, waiting=True
+    )
+    br.waitForMillis(millis=1000)
+    br.moveRightAttachmentMotorForDegrees(degrees=300, speedPct=50)
+    br.driveForDistance(
+        distance=-200, speedPct=80, then=Stop.BRAKE, waiting=True
+    )
+    br.waitForForwardButton()
     # ###                                         GREEN MISSION
 
     br.moveRightAttachmentMotorForDegrees(
