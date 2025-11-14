@@ -8,25 +8,56 @@ from base_robot import *
 # When we run this program from the master program, we will call this
 # "Run(br)" method.
 def Run(br: BaseRobot):
-
+    br.moveRightAttachmentMotorForMillis(
+        millis=500, speedPct=50, waiting=False
+    )
+    br.moveLeftAttachmentMotorForMillis(
+        millis=500, speedPct=-50, waiting=False
+    )
     br.driveArcDist(
-        radius=-130, dist=215, speedPct=80, then=Stop.BRAKE, waiting=True
+        radius=-336, dist=250, speedPct=80, then=Stop.BRAKE, waiting=True
+    )
+    br.moveRightAttachmentMotorForDegrees(degrees=-110, speedPct=20)
+    br.driveForDistance(
+        distance=150, speedPct=80, then=Stop.BRAKE, waiting=True
+    )
+    br.waitForMillis(millis=250)
+    br.moveRightAttachmentMotorForDegrees(degrees=-25, speedPct=80)
+    br.moveLeftAttachmentMotorForDegrees(degrees=115, speedPct=100)
+    br.moveLeftAttachmentMotorForMillis(
+        millis=600, speedPct=-50, waiting=False
     )
     br.driveForDistance(
-        distance=260, speedPct=80, then=Stop.BRAKE, waiting=True
+        distance=-95, speedPct=50, then=Stop.BRAKE, waiting=True
     )
-    br.driveArcDist(
-        radius=-95, dist=200, speedPct=80, then=Stop.BRAKE, waiting=True
-    )
-    br.turnInPlace(angle=90, speedPct=45)
     br.driveForDistance(
-        distance=100, speedPct=80, then=Stop.BRAKE, waiting=True
+        distance=20, speedPct=80, then=Stop.BRAKE, waiting=True
     )
-
-    # to
-    # br.driveForDistance(distance=260, speedPct=80, then=Stop.NONE.BRAKE, waiting=True)
+    br.moveRightAttachmentMotorForDegrees(degrees=60, speedPct=80)
+    br.driveForDistance(
+        distance=-110, speedPct=80, then=Stop.BRAKE, waiting=True
+    )
+    br.moveRightAttachmentMotorForDegrees(degrees=-90, speedPct=80)
+    # br.moveRightAttachmentMotorForMillis(millis=400, speedPct=80)
+    br.turnInPlace(angle=10, speedPct=45)
+    br.driveForDistance(
+        distance=70, speedPct=80, then=Stop.NONE.BRAKE, waiting=True
+    )
+    br.turnInPlace(angle=-40, speedPct=45)
+    br.driveForDistance(
+        distance=-20, speedPct=80, then=Stop.BRAKE, waiting=True
+    )
+    br.moveRightAttachmentMotorForDegrees(degrees=10, speedPct=80)
+    br.driveForDistance(
+        distance=110, speedPct=80, then=Stop.BRAKE, waiting=True
+    )
+    br.moveRightAttachmentMotorForDegrees(degrees=45, speedPct=80)
+    br.driveForDistance(
+        distance=15, speedPct=80, then=Stop.BRAKE, waiting=True
+    )
+    br.moveRightAttachmentMotorForDegrees(degrees=-15, speedPct=80)
     # br.driveArcDist(radius=-90, dist=200, speedPct=80, then=Stop.NONE.BRAKE, waiting=True)
-    # br.driveForDistance(distance=125, speedPct=80, then=Stop.BRAKE, waiting=True)
+    # br.driveForDistance(distance=50, speedPct=80, then=Stop.BRAKE, waiting=True)
 
 
 # br.driveArcDist(radius=97, dist=100, speedPct=80, then=Stop.BRAKE, waiting=True)

@@ -31,33 +31,34 @@ def Run(br: BaseRobot):
         distance=-150, speedPct=80, then=Stop.BRAKE, waiting=True
     )
     br.driveForDistance(
-        distance=80, speedPct=80, then=Stop.BRAKE, waiting=True
+        distance=90, speedPct=80, then=Stop.BRAKE, waiting=True
     )
-    br.moveRightAttachmentMotorForDegrees(degrees=-200, speedPct=100)
-    br.waitForMillis(millis=600)
-    br.moveRightAttachmentMotorForDegrees(degrees=210, speedPct=100)
+    # br.moveRightAttachmentMotorForDegrees(degrees=-200, speedPct=100)
+    # br.waitForMillis(millis=600)
+    # br.moveRightAttachmentMotorForDegrees(degrees=210, speedPct=100)
 
-    # Lifty thing
-    br.turnInPlace(angle=-37, speedPct=45)
-    br.driveForDistance(
-        distance=-10, speedPct=80, then=Stop.BRAKE, waiting=True
-    )
-    br.moveRightAttachmentMotorForDegrees(degrees=-220, speedPct=80)
-    br.driveForDistance(
-        distance=160, speedPct=80, then=Stop.BRAKE, waiting=True
-    )
-    br.moveRightAttachmentMotorForDegrees(degrees=40, speedPct=80)
-    br.driveForDistance(
-        distance=280, speedPct=40, then=Stop.BRAKE, waiting=True
-    )
-    br.waitForMillis(millis=500)
-    br.moveRightAttachmentMotorForDegrees(degrees=100, speedPct=80)
-    br.waitForMillis(millis=1000)
-    # Who lived here
-    br.driveForDistance(
-        distance=-100, speedPct=80, then=Stop.BRAKE, waiting=True
-    )
-    br.turnInPlace(angle=-65, speedPct=45)
+    # # Lifty thing
+    # br.turnInPlace(angle=-37, speedPct=45)
+    # br.driveForDistance(
+    #     distance=-10, speedPct=80, then=Stop.BRAKE, waiting=True
+    # )
+    # br.moveRightAttachmentMotorForDegrees(degrees=-220, speedPct=80)
+    # br.driveForDistance(
+    #     distance=160, speedPct=80, then=Stop.BRAKE, waiting=True
+    # )
+    # br.moveRightAttachmentMotorForDegrees(degrees=40, speedPct=80)
+    # br.driveForDistance(
+    #     distance=280, speedPct=40, then=Stop.BRAKE, waiting=True
+    # )
+    # br.waitForMillis(millis=500)
+    # br.moveRightAttachmentMotorForDegrees(degrees=100, speedPct=80)
+    # br.waitForMillis(millis=1000)
+    ###      WHO LIVED HERE
+    br.turnInPlace(angle=-112, speedPct=45)
+    # br.driveForDistance(
+    #     distance=-100, speedPct=80, then=Stop.BRAKE, waiting=True
+    # )
+    # br.turnInPlace(angle=-65, speedPct=45)
     br.driveForDistance(
         distance=230, speedPct=80, then=Stop.BRAKE, waiting=True
     )
