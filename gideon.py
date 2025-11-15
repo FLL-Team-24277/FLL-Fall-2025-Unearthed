@@ -25,7 +25,7 @@ def Run(br: BaseRobot):
     br.driveForDistance(
         distance=60, speedPct=25, then=Stop.BRAKE, waiting=True
     )
-    for pushes in range(4):
+    for pushes in range(3):
         # br.driveForDistance(
         #     distance=dist, speedPct=100, then=Stop.BRAKE, waiting=True, accelerationPct=100
         # )
