@@ -7,7 +7,7 @@ Robot arm prototype
 Cleaning brushes for robot arm
 Dirty artifact
 Clean artifact
-Robot design binder
+Robot design binder (includes code samples)
 Innovation Project Binder
 Robot Arm Design Portfolio
 Team information sheet folder
@@ -16,7 +16,7 @@ Attachments (Red Sample, Sadie "Zach-attach", Hugo)
 Robots (Timothy & OAKS)
 Indiana Jones Costume
 Cover cloth for prototype on cart
-Computer to add power to arm
+9V battery to add power to arm
 Note cards with extra comments
 Robot Design scripts for each student
 CHICKEN Logo Sign
@@ -26,14 +26,18 @@ Other things to pack
 
 Attachments (Sadie 1, 2, & 3; Hugo; Gideon; Gio; Noah)
 Robots (Timothy & OAKS)
+Charging cables
 Robot first aid kits
 Magic eraser
 Cheer signs
 Pens
 Tape
 Snacks
+Big battery
+Laptops & Chargers
+Ties, pocket squares, jackets
+
+Prototype stuff
+-----------------------
 Extra wires
 Extra batteries
-Big battery
-Laptops
-Ties, pocket squares, jackets
