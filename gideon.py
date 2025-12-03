@@ -45,9 +45,15 @@ def Run(br: BaseRobot):
     br.driveForDistance(
         distance=-45, speedPct=25, then=Stop.BRAKE, waiting=True
     )
+    
     br.moveLeftAttachmentMotorForDegrees(
-        degrees=460, speedPct=80
+        degrees=250, speedPct=100
+    )
+    br.waitForMillis(millis=150)
+    br.moveLeftAttachmentMotorForMillis(
+        millis=600, speedPct=25
     )  # raise the arm
+    
     br.waitForMillis(millis=2000)
     br.driveForDistance(
         distance=260, speedPct=80, then=Stop.BRAKE, waiting=True
