@@ -8,16 +8,11 @@ from base_robot import *
 # When we run this program from the master program, we will call this
 # "Run(br)" method.
 def Run(br: BaseRobot):
-    br.driveForDistance(
-        distance=350, speedPct=80, then=Stop.BRAKE, waiting=True
-    )
+    br.driveForDistance(distance=285, speedPct=100, then=Stop.BRAKE, waiting=True)
     br.driveForDistance(distance=-100, speedPct=100)
-    br.driveForDistance(distance=200, speedPct=45)
-    br.moveLeftAttachmentMotorForMillis(millis=1000, speedPct=80)
-    br.driveForDistance(
-        distance=-400, speedPct=80, then=Stop.BRAKE, waiting=True
-    )
-
+    br.driveForDistance(distance=200, speedPct=30)
+    br.moveRightAttachmentMotorForMillis(millis=800, speedPct=80)
+    br.driveForDistance(distance=-400, speedPct=80, then=Stop.BRAKE, waiting=True)
 
 # Leave everything below here and don't type anything below this line
 # If running this program directly (not from the master program), this is
