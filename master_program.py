@@ -1,7 +1,7 @@
 from base_robot import *
 
 # Import missions
-import SadieBigMission, noahboulder2, gideon2, hugo2, rock, Delivery2, ImWatchingMegamindDuringPractice, acrossboard
+import not_declan_not_brushy, noahboulder2, gideon2, hugo2, rock, Delivery2, ImWatchingMegamindDuringPractice, acrossboard
 
 br: BaseRobot = BaseRobot()
 
@@ -64,7 +64,7 @@ while True:
 
     if (col == Color.SENSOR_RED or col == Color.SENSOR_MAGENTA) and table_side == "left":  # type: ignore
         print("Launching Red/Magenta with left button")
-        SadieBigMission.Run(br)
+        not_declan_not_brushy.Run(br)
 
     if (col == Color.SENSOR_RED or col == Color.SENSOR_MAGENTA) and table_side == "right":  # type: ignore
         print("Launching Red/Magenta with right button")
