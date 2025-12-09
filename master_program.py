@@ -1,7 +1,7 @@
 from base_robot import *
 
 # Import missions
-import SadieBigMission, noahboulder2, gideon, hugo2, rock, Delivery2, ImWatchingMegamindDuringPractice, acrossboard
+import SadieBigMission, noahboulder2, gideon2, hugo2, rock, Delivery2, ImWatchingMegamindDuringPractice, acrossboard
 
 br: BaseRobot = BaseRobot()
 
@@ -48,7 +48,7 @@ while True:
 
     if col == Color.SENSOR_LIME:  # type: ignore
         print("Launching Lime")
-        gideon.Run(br)
+        gideon2.Run(br)
 
     # if col == Color.SENSOR_MAGENTA:
     #     print("Launching Magenta")
