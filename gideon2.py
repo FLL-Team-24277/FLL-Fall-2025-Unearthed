@@ -13,11 +13,16 @@ def Run(br: BaseRobot):
 
     ###                 ACROSS BOARD
     # to
-    br.driveForDistance(distance=540, speedPct=75, then=Stop.BRAKE, waiting=True)
-    br.moveLeftAttachmentMotorForDegrees(degrees=-500, speedPct=77)
-    br.moveRightAttachmentMotorForMillis(millis=2000, speedPct=-100)
-    br.moveLeftAttachmentMotorForDegrees(degrees=500, speedPct=80)
-    br.driveForDistance(distance=-600, speedPct=100, then=Stop.BRAKE, waiting=True)
+    br.driveForDistance(
+        distance=540, speedPct=75, then=Stop.BRAKE, waiting=True
+    )
+    br.moveLeftAttachmentMotorForDegrees(degrees=-580, speedPct=77)
+    br.moveRightAttachmentMotorForMillis(millis=8000, speedPct=-100)
+    br.moveLeftAttachmentMotorForDegrees(degrees=580, speedPct=80)
+    br.driveForDistance(
+        distance=-600, speedPct=100, then=Stop.BRAKE, waiting=True
+    )
+
 
 # Leave everything below here and don't type anything below this line
 # If running this program directly (not from the master program), this is
