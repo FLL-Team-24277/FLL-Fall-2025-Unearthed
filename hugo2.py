@@ -9,9 +9,9 @@ from base_robot import *
 # "Run(br)" method.
 def Run(br: BaseRobot):
 
-
+    br.driveForDistance(distance=20, speedPct=40, then=Stop.BRAKE, waiting=True)
     br.driveForDistance(
-        distance=-215, speedPct=80, then=Stop.NONE, waiting=True
+        distance=-225, speedPct=80, then=Stop.NONE, waiting=True
     )
     br.moveRightAttachmentMotorForMillis(
         millis=4000, speedPct=10, waiting=False
