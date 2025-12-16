@@ -13,16 +13,17 @@ def Run(br: BaseRobot):
 
     ###                 ACROSS BOARD
     # to
-    br.driveArcDist(radius=500, dist=200, speedPct=80, then=Stop.NONE, waiting=True)
+    br.rightAttachmentMotor.run(MED_MOT_MAX_SPEED_DEGSEC)
+    br.driveArcDist(radius=500, dist=150, speedPct=80, then=Stop.NONE, waiting=True)
     # br.driveForDistance(distance=200, speedPct=80, then=Stop.NONE, waiting=True)
-    br.moveRightAttachmentMotorForDegrees(degrees=1800, speedPct=100, waiting=False)
-    br.driveForDistance(distance=200, speedPct=30, then=Stop.BRAKE, waiting=True)
-    br.moveRightAttachmentMotorForDegrees(degrees=-36000, speedPct=100, waiting=False)
-    br.driveForDistance(distance=200, speedPct=10, then=Stop.BRAKE, waiting=True)
+    br.driveForDistance(distance=400, speedPct=20, then=Stop.BRAKE, waiting=True)
+    br.rightAttachmentMotor.run(-MED_MOT_MAX_SPEED_DEGSEC)
     # br.moveRightAttachmentMotorForMillis(millis=6000, speedPct=80, waiting=False)
 
-    br.driveForDistance(distance=300, speedPct=30, then=Stop.BRAKE, waiting=True)
-    br.driveArcDist(radius=-1000, dist=-1000, speedPct=30, then=Stop.BRAKE, waiting=True,gyro=False)
+    br.driveForDistance(distance=350, speedPct=20, then=Stop.BRAKE, waiting=True)
+    br.waitForMillis(millis=2000)
+    br.driveArcDist(radius=-1000, dist=-1000, speedPct=20, then=Stop.BRAKE, waiting=True,gyro=False)
+    br.rightAttachmentMotor.stop()
     # br.driveForDistance(distance=-1000, speedPct=80, then=Stop.BRAKE, waiting=True)
 
 # Leave everything below here and don't type anything below this line
