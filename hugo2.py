@@ -9,7 +9,7 @@ from base_robot import *
 # "Run(br)" method.
 def Run(br: BaseRobot):
 
-    br.driveForDistance(distance=20, speedPct=40, then=Stop.BRAKE, waiting=True)
+    #br.driveForDistance(distance=20, speedPct=40, then=Stop.BRAKE, waiting=True)
     br.driveForDistance(
         distance=-225, speedPct=80, then=Stop.NONE, waiting=True
     )
@@ -26,8 +26,8 @@ def Run(br: BaseRobot):
     br.moveRightAttachmentMotorForMillis(millis=2500, speedPct=-20)
     br.driveForDistance(
        distance=300, speedPct=80, then=Stop.BRAKE, waiting=True)
-    br.moveLeftAttachmentMotorForMillis(millis=1700, speedPct=-80)
-    br.moveLeftAttachmentMotorForMillis(millis=1700, speedPct=80)
+    br.moveLeftAttachmentMotorForMillis(millis=1900, speedPct=-100)
+    br.moveLeftAttachmentMotorForMillis(millis=1900, speedPct=100)
     br.driveForDistance(distance=-280, speedPct=80, then=Stop.BRAKE, waiting=True)
     br.driveArcDist(radius=-150, dist=400, speedPct=100, then=Stop.NONE, waiting=True)
     br.driveForDistance(distance=500, speedPct=100, then=Stop.BRAKE, waiting=True)
