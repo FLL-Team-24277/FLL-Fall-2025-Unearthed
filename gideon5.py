@@ -13,18 +13,50 @@ def Run(br: BaseRobot):
 
     ###                 ACROSS BOARD
     # to
-    br.rightAttachmentMotor.run(MED_MOT_MAX_SPEED_DEGSEC)
-    br.driveArcDist(radius=500, dist=150, speedPct=80, then=Stop.NONE, waiting=True)
-    # br.driveForDistance(distance=200, speedPct=80, then=Stop.NONE, waiting=True)
-    br.driveForDistance(distance=400, speedPct=20, then=Stop.BRAKE, waiting=True)
     br.rightAttachmentMotor.run(-MED_MOT_MAX_SPEED_DEGSEC)
-    # br.moveRightAttachmentMotorForMillis(millis=6000, speedPct=80, waiting=False)
+    br.leftAttachmentMotor.run(MED_MOT_MAX_SPEED_DEGSEC)
+    br.driveArcDist(
+        radius=700, dist=220, speedPct=80, then=Stop.NONE, waiting=True
+    )
+    # br.driveForDistance(distance=200, speedPct=80, then=Stop.NONE, waiting=True)
+    # go to and then stop on top of surface brushing mission
+    br.driveForDistance(
+        distance=370, speedPct=80, then=Stop.BRAKE, waiting=True
+    )
+    br.waitForMillis(millis=500)
 
-    br.driveForDistance(distance=350, speedPct=20, then=Stop.BRAKE, waiting=True)
+    # go to and stop on top of the map reveal mission part 1
+    br.driveForDistance(
+        distance=200, speedPct=80, then=Stop.BRAKE, waiting=True
+    )
+    br.waitForMillis(millis=1000)
+
+    # go a little bit farther and stop on top of the map reveal mission part 2
+    br.driveForDistance(
+        distance=110, speedPct=80, then=Stop.BRAKE, waiting=True
+    )
     br.waitForMillis(millis=2000)
-    br.driveArcDist(radius=-1000, dist=-1000, speedPct=20, then=Stop.BRAKE, waiting=True,gyro=False)
+
+    # go a little ways before reversing the motor
+    br.driveForDistance(
+        distance=-160, speedPct=-80, then=Stop.NONE, waiting=True
+    )
+
+    br.rightAttachmentMotor.run(MED_MOT_MAX_SPEED_DEGSEC)
+    br.leftAttachmentMotor.run(-MED_MOT_MAX_SPEED_DEGSEC)
+
+    br.driveArcDist(
+        radius=-1000,
+        dist=-700,
+        speedPct=100,
+        then=Stop.BRAKE,
+        waiting=True,
+        gyro=False,
+    )
     br.rightAttachmentMotor.stop()
+    br.leftAttachmentMotor.stop()
     # br.driveForDistance(distance=-1000, speedPct=80, then=Stop.BRAKE, waiting=True)
+
 
 # Leave everything below here and don't type anything below this line
 # If running this program directly (not from the master program), this is
