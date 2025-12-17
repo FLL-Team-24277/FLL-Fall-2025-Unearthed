@@ -17,9 +17,9 @@ def Run(br: BaseRobot):
         distance=540, speedPct=75, then=Stop.BRAKE, waiting=True
     )
     br.moveRightAttachmentMotorForMillis(
-        millis=5000, speedPct=-100, waiting=False
+        millis=5000, speedPct=-50, waiting=False
     )
-    br.moveLeftAttachmentMotorForDegrees(degrees=-900, speedPct=77)
+    br.moveLeftAttachmentMotorForMillis(millis=1000, speedPct=-100)
     br.waitForMillis(millis=2000)
     br.moveLeftAttachmentMotorForMillis(millis=1000, speedPct=100)
     br.driveForDistance(
