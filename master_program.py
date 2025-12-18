@@ -40,9 +40,9 @@ while True:
     # It will now launch the mission coresponding to the color
     if col == Color.SENSOR_YELLOW:  # type: ignore
         print("Launching Yellow")
-        rock.Run(br)
+        # rock.Run(br)
 
-        br.waitForForwardButton()
+        # br.waitForForwardButton()
 
         Delivery2.Run(br)
 
