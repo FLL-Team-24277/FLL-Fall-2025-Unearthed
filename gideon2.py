@@ -14,13 +14,12 @@ def Run(br: BaseRobot):
     ###                 ACROSS BOARD
     # to
     br.driveForDistance(
-        distance=540, speedPct=75, then=Stop.BRAKE, waiting=True
+        distance=500, speedPct=75, then=Stop.BRAKE, waiting=True #540
     )
+    br.moveLeftAttachmentMotorForMillis(millis=1000, speedPct=-100, waiting=False)
     br.moveRightAttachmentMotorForMillis(
-        millis=5000, speedPct=-50, waiting=False
+        millis=6000, speedPct=-300, waiting=True
     )
-    br.moveLeftAttachmentMotorForMillis(millis=1000, speedPct=-100)
-    br.waitForMillis(millis=2000)
     br.moveLeftAttachmentMotorForMillis(millis=1000, speedPct=100)
     br.driveForDistance(
         distance=-600, speedPct=100, then=Stop.BRAKE, waiting=True
