@@ -40,9 +40,9 @@ while True:
     # It will now launch the mission coresponding to the color
     if col == Color.SENSOR_YELLOW:  # type: ignore
         print("Launching Yellow")
-        # rock.Run(br)
+        rock.Run(br)
 
-        # br.waitForForwardButton()
+        br.waitForForwardButton()
 
         Delivery2.Run(br)
 
@@ -70,7 +70,7 @@ while True:
         print("Launching Red/Magenta with right button")
         acrossboard.Run(br)
 
-    if col == Color.SENSOR_GREEN  and table_side == "right":  # type: ignore
+    if col == Color.SENSOR_GREEN and table_side == "right":  # type: ignore
         print("Launching Green with right button")
         gideon5.Run(br)
 
