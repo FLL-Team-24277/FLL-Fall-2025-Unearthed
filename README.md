@@ -1,3 +1,11 @@
+# FLL Fall 2025 - Unearthed 🏆
+
+![FLL Team 24277](https://img.shields.io/badge/FLL%20Team-24277-orange)
+![Season](https://img.shields.io/badge/Season-2025%20Unearthed-blue)
+![GitHub last commit](https://img.shields.io/github/last-commit/FLL-Team-24277/FLL-Fall-2025-Unearthed)
+![GitHub contributors](https://img.shields.io/github/contributors/FLL-Team-24277/FLL-Fall-2025-Unearthed)
+![GitHub license](https://img.shields.io/github/license/FLL-Team-24277/FLL-Fall-2025-Unearthed)
+
 # Fall-2025-Unearthed, FLL Team 24277
 Pybricks, VS Code setup, base robot, missions, and materials for the Fall 2025 FLL Season "Unearthed".
 
