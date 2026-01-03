@@ -1,13 +1,13 @@
 TODO: Review code with Noah & Sadie
 TODO: Team photo
 TODO: Finish Engineering Design Portfolio
-TODO: AI Logo and "Chicken" acronym
 TODO: Review Rubrics--have we covered everything?
 TODO: Review questions from sample judging questions
-TODO: Need a dirty artifact
 TODO: Note cards with extra comments
 TODO: Rewire and reprogram Robot Arm 
+TODO: Inverse Kinematics
 TODO: Get Jackets
+TODO: Get Indiana Jones Costume
 TODO: Reprint slides (for easel and binder) that have been updated
 TODO: Fix remaining missions
 TODO: Insert code samples in binder
