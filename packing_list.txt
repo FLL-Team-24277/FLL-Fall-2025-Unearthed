@@ -20,6 +20,8 @@ Cover cloth for prototype on cart
 Note cards with extra comments
 Robot Design scripts for each student
 CHICKEN Logo Sign
+Servo Motor
+Scotch Tape for chicken sign
 
 Other things to pack
 -----------------------
