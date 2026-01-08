@@ -33,7 +33,7 @@ def Run(br: BaseRobot):
 
     # go a little bit farther and stop on top of the map reveal mission part 2
     br.driveForDistance(
-        distance=110, speedPct=80, then=Stop.BRAKE, waiting=True
+        distance=160, speedPct=80, then=Stop.BRAKE, waiting=True
     )
     br.waitForMillis(millis=2000)
 
