@@ -44,5 +44,3 @@ Prototype stuff
 -----------------------
 Extra wires
 Extra batteries
-
-Test
