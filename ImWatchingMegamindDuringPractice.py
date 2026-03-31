@@ -9,46 +9,46 @@ from base_robot import *
 # "Run(br)" method.
 def Run(br: BaseRobot):
     br.moveRightAttachmentMotorForMillis(
-        millis=500, speedPct=50, waiting=False
+        millis=500, speedPct=80, waiting=False
     )
     br.moveLeftAttachmentMotorForMillis(
-        millis=500, speedPct=-50, waiting=False
+        millis=500, speedPct=-80, waiting=False
     )
     br.driveArcDist(
-        radius=-336, dist=250, speedPct=80, then=Stop.BRAKE, waiting=True
+        radius=-336, dist=250, speedPct=100, then=Stop.BRAKE, waiting=True
     )
-    br.moveRightAttachmentMotorForDegrees(degrees=-110, speedPct=20)
+    br.moveRightAttachmentMotorForDegrees(degrees=-120, speedPct=100)
     br.driveForDistance(
-        distance=150, speedPct=80, then=Stop.BRAKE, waiting=True
+        distance=160, speedPct=100, then=Stop.BRAKE, waiting=True
     )
     br.waitForMillis(millis=250)
-    br.moveRightAttachmentMotorForDegrees(degrees=-25, speedPct=80)
+    br.moveRightAttachmentMotorForDegrees(degrees=-25, speedPct=100)
     br.moveLeftAttachmentMotorForDegrees(degrees=115, speedPct=100)
     br.moveLeftAttachmentMotorForMillis(
-        millis=600, speedPct=-50, waiting=False
+        millis=600, speedPct=-80, waiting=False
     )
     br.driveForDistance(
-        distance=-95, speedPct=50, then=Stop.BRAKE, waiting=True
+        distance=-105, speedPct=100, then=Stop.BRAKE, waiting=True
     )
     br.driveForDistance(
-        distance=30, speedPct=80, then=Stop.BRAKE, waiting=True
+        distance=30, speedPct=100, then=Stop.BRAKE, waiting=True
     )
-    br.moveRightAttachmentMotorForDegrees(degrees=58, speedPct=80)
+    br.moveRightAttachmentMotorForDegrees(degrees=58, speedPct=100)
     br.driveForDistance(
-        distance=-110, speedPct=80, then=Stop.BRAKE, waiting=True
+        distance=-110, speedPct=100, then=Stop.BRAKE, waiting=True
     )
-    br.moveRightAttachmentMotorForDegrees(degrees=-90, speedPct=80)
+    br.moveRightAttachmentMotorForDegrees(degrees=-90, speedPct=100)
     # br.moveRightAttachmentMotorForMillis(millis=400, speedPct=80)
-    br.turnInPlace(angle=10, speedPct=45)
+    br.turnInPlace(angle=10, speedPct=100)
     br.driveForDistance(
-        distance=55, speedPct=80, then=Stop.NONE.BRAKE, waiting=True
+        distance=55, speedPct=100, then=Stop.NONE.BRAKE, waiting=True
     )
-    br.turnInPlace(angle=-40, speedPct=45)
+    br.turnInPlace(angle=-40, speedPct=100)
     br.driveForDistance(
-        distance=-20, speedPct=80, then=Stop.BRAKE, waiting=True
+        distance=-20, speedPct=100, then=Stop.BRAKE, waiting=True
     )
     br.driveArcDist(
-        radius=-210, dist=-410, speedPct=80, then=Stop.BRAKE, waiting=True
+        radius=-210, dist=-410, speedPct=100, then=Stop.BRAKE, waiting=True
     )
     br.waitForForwardButton()
     br.moveRightAttachmentMotorForDegrees(degrees=50, speedPct=80)
@@ -57,11 +57,11 @@ def Run(br: BaseRobot):
     )
 
     br.driveForDistance(
-        distance=80, speedPct=650, then=Stop.BRAKE, waiting=True
+        distance=80, speedPct=100, then=Stop.BRAKE, waiting=True
     )
     br.moveRightAttachmentMotorForDegrees(degrees=-20, speedPct=80)
     br.driveForDistance(
-        distance=-25, speedPct=80, then=Stop.BRAKE, waiting=True
+        distance=-25, speedPct=100, then=Stop.BRAKE, waiting=True
     )
     br.turnInPlace(angle=-190, speedPct=45)
     # br.turnInPlace(angle=56, speedPct=45)
@@ -69,9 +69,9 @@ def Run(br: BaseRobot):
         distance=450, speedPct=100, then=Stop.BRAKE, waiting=True
     )
 
-    br.moveRightAttachmentMotorForDegrees(degrees=-15, speedPct=80)
-    br.driveArcDist(radius=-90, dist=200, speedPct=80, then=Stop.NONE.BRAKE, waiting=True)
-    br.driveForDistance(distance=50, speedPct=80, then=Stop.BRAKE, waiting=True)
+    # br.moveRightAttachmentMotorForDegrees(degrees=-15, speedPct=80)
+    # br.driveArcDist(radius=-90, dist=200, speedPct=80, then=Stop.NONE.BRAKE, waiting=True)
+    # br.driveForDistance(distance=50, speedPct=80, then=Stop.BRAKE, waiting=True)
 
 
 # br.driveArcDist(radius=97, dist=100, speedPct=80, then=Stop.BRAKE, waiting=True)
