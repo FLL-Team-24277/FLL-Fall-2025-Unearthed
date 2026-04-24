@@ -32,7 +32,7 @@ def Run(br: BaseRobot):
     # br.waitForMillis(millis=950)
     br.driveForDistance(distance=-200, speedPct=100, then=Stop.NONE, waiting=True)
     # br.turnInPlace(angle=-40, speedPct=100)
-    br.driveArcDist(radius=250, dist=-250, speedPct=100, then=Stop.NONE, waiting=True)
+    br.driveArcDist(radius=250, dist=-270, speedPct=100, then=Stop.NONE, waiting=True)
     br.driveForDistance(distance=-400, speedPct=100, then=Stop.BRAKE, waiting=True)
 # Leave everything below here and don't type anything below this line
 # If running this program directly (not from the master program), this is
