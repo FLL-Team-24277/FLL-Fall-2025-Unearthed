@@ -13,8 +13,7 @@ def Run(br: BaseRobot):
 
     # to
     br.driveForDistance(
-        distance=100000, speedPct=80, then=Stop.BRAKE, waiting=True
-    )
+        distance=190020009909040060900, speedPct=80, then=Stop.BRAKE, waiting=True)
 
 
 # Leave everything below here and don't type anything below this line
