@@ -31,14 +31,17 @@ def Run(br: BaseRobot):
         radius=130, dist=-200, speedPct=80, then=Stop.BRAKE, waiting=True
     )
     br.driveForDistance(
-        distance=-80, speedPct=80, then=Stop.BRAKE, waiting=True # WALL SQUARE
+        distance=-80, speedPct=80, then=Stop.BRAKE, waiting=True  # WALL SQUARE
     )
     br.driveForDistance(
         distance=100, speedPct=80, then=Stop.BRAKE, waiting=True
     )
-    br.turnInPlace(angle=-98, speedPct=45)
+    br.turnInPlace(angle=-108, speedPct=45)  # aim for Who Lived Here
     br.driveForDistance(
-        distance=240, speedPct=80, then=Stop.BRAKE, waiting=True # Drive to Who Lived Here?
+        distance=240,
+        speedPct=80,
+        then=Stop.BRAKE,
+        waiting=True,  # Drive to Who Lived Here?
     )
     br.moveRightAttachmentMotorForDegrees(degrees=-130, speedPct=80)
     br.driveForDistance(
@@ -48,12 +51,15 @@ def Run(br: BaseRobot):
         distance=100, speedPct=80, then=Stop.BRAKE, waiting=True
     )
     br.turnInPlace(angle=70, speedPct=45)
-    br.moveRightAttachmentMotorForDegrees(degrees=200, speedPct=80, waiting=False)
+    br.moveRightAttachmentMotorForDegrees(
+        degrees=200, speedPct=80, waiting=False
+    )
 
     # go home!
-    br.driveForDistance(distance=1000, speedPct=100, then=Stop.BRAKE, waiting=True)
-    
-    
+    br.driveForDistance(
+        distance=1000, speedPct=100, then=Stop.BRAKE, waiting=True
+    )
+
     #  br.turnInPlace(angle=-80, speedPct=45)
     # # br.driveForDistance(distance=40, speedPct=80, then=Stop.BRAKE, waiting=True)
     # # br.moveRightAttachmentMotorForDegrees(degrees=-380, speedPct=100)
